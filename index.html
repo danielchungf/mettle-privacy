@@ -23,7 +23,7 @@
 </head>
 <body>
 <h1>Mettle Privacy Policy</h1>
-<p class="updated">Last updated: July 17, 2026</p>
+<p class="updated">Last updated: August 25, 2026</p>
 
 <p>Mettle is a social fitness game: your real-world steps power heroes who
 battle monsters alongside your friends. This policy explains what data the
@@ -32,6 +32,15 @@ progress are stored to make the game work, nothing is sold, and there are no
 ads or third-party trackers.</p>
 
 <h2>What we collect and why</h2>
+
+<p><strong>Your account.</strong> Mettle requires signing in with Apple or
+Google. From your provider we receive a unique account identifier and,
+depending on the provider and your choices, an email address (Sign in with
+Apple lets you hide it — that works fine). The account exists only to anchor
+your game progress so it survives reinstalls and follows you across devices.
+We store which provider you signed in with. Your email is never used for
+identity matching, never shared, and we do not send marketing email. We never
+see a password.</p>
 
 <p><strong>Health data (steps and walking distance).</strong> With your
 permission, Mettle reads your daily step count and walking distance from
@@ -52,23 +61,47 @@ daily step totals, and in-game activity (deploys, claims, nudges) with that
 party's members. Parties are private: they are only reachable by their
 unguessable invite code.</p>
 
+<p><strong>App and device basics.</strong> Your player record also stores
+the app version you are running, your app language, and whether you first
+created a party, joined one with a code, or started solo. This is so we can
+tell how many people play and support them when something breaks. It is not
+linked to any advertising identifier and is never shared with anyone.</p>
+
+<p><strong>Notification token.</strong> If you allow notifications, the app
+stores your device's push token so gameplay alerts can reach your phone. It
+is deleted when you sign out.</p>
+
 <h2>Where your data lives</h2>
 
-<p>All game data is stored in Apple's iCloud (CloudKit), tied to your iCloud
-account. We do not operate our own servers and cannot read your private
-identity record. Apple's handling of iCloud data is described in Apple's own
-privacy policy.</p>
+<p>Game data is stored in a database we operate on Supabase, a hosted
+database service, on servers in the United States. Access is scoped per
+account: other players can only read what the game shares by design (your
+party data and leaderboard entries).</p>
+
+<p>If you played Mettle before accounts were introduced (version 1.4.3),
+your earlier progress lives in Apple's iCloud (CloudKit), tied to your
+iCloud account. When you first sign in, the app copies that progress to our
+database once; the iCloud copy is not deleted by us and remains subject to
+Apple's privacy policy.</p>
 
 <p>Health data is read from Apple Health on your device. Only daily totals
 (steps, distance) leave the device, and only to power the party features
 above; raw Health records never leave your phone.</p>
+
+<h2>Feedback</h2>
+
+<p>If you use the in-app "Send feedback" form, your message — together with
+the name you entered and basic diagnostics (app version, iOS version, device
+model) — is relayed to us as an email through Formspree, a form-forwarding
+service. This happens only when you tap Send.</p>
 
 <h2>What we don't do</h2>
 <ul>
   <li>No advertising, and no advertising identifiers.</li>
   <li>No selling or renting of data, health or otherwise.</li>
   <li>No third-party analytics or trackers.</li>
-  <li>No accounts, emails, or passwords are collected today.</li>
+  <li>No passwords (sign-in is handled by Apple or Google), and no marketing
+  email.</li>
 </ul>
 
 <h2>Notifications</h2>
@@ -79,10 +112,11 @@ in iOS Settings at any time.</p>
 
 <h2>Data retention and deletion</h2>
 
-<p>Game data persists in iCloud so your progress survives reinstalls. To
-delete your data, remove the app and contact us at the address below and we
-will delete your game records. Leaving a party stops sharing your steps with
-it.</p>
+<p>Game data persists so your progress survives reinstalls. You can delete
+your account at any time in Settings → Delete account: this removes your
+account and your game records from our database immediately. Leaving a party
+stops sharing your steps with it. You can also email us at the address below
+with any deletion request.</p>
 
 <h2>Children</h2>
 
@@ -91,9 +125,8 @@ collect data from them.</p>
 
 <h2>Changes</h2>
 
-<p>If this policy changes materially (for example, when sign-in accounts are
-introduced), the updated policy will be posted at this address with a new
-date.</p>
+<p>If this policy changes materially, the updated policy will be posted at
+this address with a new date.</p>
 
 <h2>Contact</h2>
 
