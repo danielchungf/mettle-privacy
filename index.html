@@ -23,7 +23,7 @@
 </head>
 <body>
 <h1>Mettle Privacy Policy</h1>
-<p class="updated">Last updated: August 25, 2026</p>
+<p class="updated">Last updated: August 27, 2026</p>
 
 <p>Mettle is a social fitness game: your real-world steps power heroes who
 battle monsters alongside your friends. This policy explains what data the
@@ -45,10 +45,20 @@ shared, and we do not send marketing email. We never see a password.</p>
 
 <p><strong>Health data (steps and walking distance).</strong> With your
 permission, Mettle reads your daily step count and walking distance from
-Apple Health. Steps are converted into in-game damage and shown to the
+<strong>Apple Health</strong> on iPhone and from <strong>Health Connect</strong>
+on Android. Steps are converted into in-game damage and shown to the
 members of any party you join. Health data is used only for gameplay. It is
-never used for advertising, never sold, and never shared with anyone outside
-the parties you choose to join.</p>
+never used for advertising, never sold, never transferred to a third party,
+and never shared with anyone outside the parties you choose to join.</p>
+
+<p>On Android, Mettle also asks to read this data <strong>in the
+background</strong>. That permission exists for one reason: so the steps you
+walk with the app closed still damage your party's monster during the day,
+rather than only counting the next time you happen to open the app. You can
+withdraw it, or any Health Connect permission, at any time in Health Connect's
+own settings, and Mettle keeps working &mdash; it simply stops counting steps
+until you grant it again. Mettle never writes anything back to Apple Health or
+Health Connect.</p>
 
 <p><strong>Display name.</strong> The name you enter is shown to your
 partymates and, if you appear on the leaderboard, to other players.</p>
@@ -69,8 +79,12 @@ tell how many people play and support them when something breaks. It is not
 linked to any advertising identifier and is never shared with anyone.</p>
 
 <p><strong>Notification token.</strong> If you allow notifications, the app
-stores your device's push token so gameplay alerts can reach your phone. It
-is deleted when you sign out.</p>
+stores your device's push token so gameplay alerts can reach your phone
+&mdash; issued by Apple Push Notification service on iPhone and by Firebase
+Cloud Messaging (a Google service) on Android. The token identifies the
+device, not you, and it is deleted when you sign out. The alert text is
+composed on your own device from a message key, so the words of a notification
+are never sent through the push service.</p>
 
 <h2>Where your data lives</h2>
 
@@ -85,9 +99,11 @@ iCloud account. When you first sign in, the app copies that progress to our
 database once; the iCloud copy is not deleted by us and remains subject to
 Apple's privacy policy.</p>
 
-<p>Health data is read from Apple Health on your device. Only daily totals
-(steps, distance) leave the device, and only to power the party features
-above; raw Health records never leave your phone.</p>
+<p>Health data is read from Apple Health or Health Connect on your device.
+Only daily totals (steps, distance) leave the device, and only to power the
+party features above; the underlying health records never leave your phone.
+Mettle keeps no copy of your health data beyond those daily totals, and
+deleting your account deletes them.</p>
 
 <h2>Feedback</h2>
 
